@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="auth-container">
+      <h1>Motion</h1>
+      
+      <!-- Login Form -->
+      <div class="auth-form" id="login-form">
+        <h2>Login</h2>
+        <form id="login">
+          <div class="form-group">
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+      </div>
+      
+      <!-- Register Form -->
+      <div class="auth-form" id="register-form" style="display: none;">
+        <h2>Register</h2>
+        <form id="register">
+          <div class="form-group">
+            <label for="register-username">Username</label>
+            <input type="text" id="register-username" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" required>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="bot-container">
+    <div class="bot-button">
+      <i class="fa-regular fa-circle-question"></i>
+    </div>
+  </div>
+
+  <div class="bot-chatbox">
+    <div class="bot-chat-header">
+      <span>Motion Info</span>
+      <div class="bot-header-close">×</div>
+    </div>
+    
+    <div class="bot-chat-body">
+      <div class="bot-messages">
+        <div class="bot-cpn-chats">
+          <div class="bot-cpn-texts">👋 Hi there! I'm the Motion assistant. What would you like to know about our app?</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bot-chat-input">
+      <input type="text" id="bot-inputtxt" placeholder="Type a question...">
+      <button id="bot-sendButton">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+    
+    <div class="bot-chat-footer">
+      Motion App © 2025
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
