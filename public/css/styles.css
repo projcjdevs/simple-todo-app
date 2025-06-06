@@ -32,11 +32,11 @@ body {
   overflow: hidden;
 }
 
-h1 {
+.auth-container h1 {
   text-align: center;
-  color: #000000;
+  color: #000000;  /* Brand color to match your buttons */
   margin-bottom: 25px;
-  font-size: 28px;
+  font-size: 32px;  /* Reduced from 22px to 16px */
 }
 
 h2 {
