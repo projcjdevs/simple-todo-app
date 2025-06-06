@@ -16,27 +16,45 @@
 
   <!-- Main dashboard structure -->
   <div class="dashboard-container">
-    <!-- Header -->
+    <!-- Header/Navbar -->
     <header class="dashboard-header">
       <div class="header-left">
         <button class="menu-btn"><i class="fas fa-bars"></i></button>
-        <h1 class="dashboard-title"><i class="fas fa-th-large"></i></h1>
       </div>
       <div class="header-right">
-        <button class="filter-btn"><i class="fas fa-filter"></i></button>
-        <button class="sort-btn"><i class="fas fa-sort"></i></button>
         <button class="user-btn"><i class="fas fa-user"></i></button>
         <button class="settings-btn"><i class="fas fa-cog"></i></button>
         <button class="more-btn"><i class="fas fa-ellipsis-v"></i></button>
       </div>
     </header>
 
+    <!-- Secondary toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <h1 class="dashboard-title"><i class="fas fa-th-large"></i></h1>
+      </div>
+      <div class="toolbar-right">
+        <button class="filter-btn"><i class="fas fa-filter"></i></button>
+        <button class="sort-btn"><i class="fas fa-sort"></i></button>
+      </div>
+    </div>
+
     <!-- Main content area -->
     <main class="dashboard-main">
       <!-- Task Cards Container -->
       <div class="cards-container">
-        
-        <!-- Task Card 1 -->
+        <!-- Add New Task Card -->
+        <div class="task-card add-card">
+          <div class="add-card-content">
+            <div class="add-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+            <h3>Add New Task</h3>
+            <p>Create a new task category</p>
+          </div>
+        </div>
+
+        <!-- Example Task Card -->
         <div class="task-card">
           <div class="card-avatar">
             <span class="avatar-text">WRK</span>
@@ -53,10 +71,10 @@
           </div>
         </div>
 
-        <!-- Task Card 2 -->
+        <!-- Example Task Card 2 -->
         <div class="task-card">
           <div class="card-avatar add-avatar">
-            <i class="fas fa-plus"></i>
+            <i class="fas fa-home"></i>
           </div>
           <div class="card-content">
             <h3>Personal Tasks</h3>
@@ -67,34 +85,6 @@
           </div>
           <div class="card-menu">
             <button class="menu-btn"><i class="fas fa-edit"></i></button>
-          </div>
-        </div>
-
-        <!-- Task Card 3 -->
-        <div class="task-card">
-          <div class="card-avatar add-avatar">
-            <i class="fas fa-plus"></i>
-          </div>
-          <div class="card-content">
-            <h3>Study Goals</h3>
-            <p class="card-subtitle">Complete online courses and practice coding</p>
-            <div class="card-actions">
-              <button class="action-btn primary-btn">Check</button>
-            </div>
-          </div>
-          <div class="card-menu">
-            <button class="menu-btn"><i class="fas fa-edit"></i></button>
-          </div>
-        </div>
-
-        <!-- Add New Task Card -->
-        <div class="task-card add-card">
-          <div class="add-card-content">
-            <div class="add-icon">
-              <i class="fas fa-plus"></i>
-            </div>
-            <h3>Add New Task</h3>
-            <p>Create a new task category</p>
           </div>
         </div>
 
