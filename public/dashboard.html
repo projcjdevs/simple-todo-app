@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasklet Dashboard</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/lp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dashboard-body">
-  <!-- Background elements -->
-  <div class="bg-circle circle-1"></div>
-  <div class="bg-circle circle-2"></div>
 
   <!-- Main dashboard structure -->
   <div class="dashboard-container">
@@ -28,10 +26,14 @@
       </div>
     </header>
 
+    <div class="dashboard-greetings">
+      <h1 class="greeting-title">Welcome back, User!</h1>
+      <p class="greeting-subtitle">Here's your task overview for today</p>
+    </div>
     <!-- Secondary toolbar -->
     <div class="toolbar">
       <div class="toolbar-left">
-        <h1 class="dashboard-title"><i class="fas fa-th-large"></i></h1>
+        <h1 class="dashboard-title"><i class="fa-solid fa-square-plus"></i>
       </div>
       <div class="toolbar-right">
         <button class="filter-btn"><i class="fas fa-filter"></i></button>
@@ -88,8 +90,8 @@
           </div>
         </div>
 
-      </div>
-    </main>
+
+
   </div>
 
   <!-- Chatbot -->
@@ -124,6 +126,10 @@
       Tasklet © 2025
     </div>
   </div>
+
+    <!-- Background elements -->
+  <div class="bg-circle circle-1"></div>
+  <div class="bg-circle circle-2"></div>
 
   <script src="js/dashboard.js"></script>
   <script src="js/chatbot.js"></script>

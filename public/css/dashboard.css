@@ -8,9 +8,13 @@
 }
 
 .dashboard-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
 }
 
 /* Header/Navbar */
@@ -25,6 +29,7 @@
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
 }
 
 .header-left {
@@ -109,14 +114,19 @@
 
 /* Main Content */
 .dashboard-main {
-  padding: 0 20px 20px;
+  width: 100%;
+  padding: 0 24px 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Cards Container */
+/* Cards Container - Fixed 3 column grid */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 95px;
+  row-gap: 20px;
+  align-items: stretch;
 }
 
 /* Task Cards */
@@ -129,6 +139,7 @@
   gap: 15px;
   transition: all 0.2s ease;
   border: 1px solid #e9ecef;
+  width: 100%;
 }
 
 .task-card:hover {
@@ -275,6 +286,12 @@
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .dashboard-container {
     padding: 0;
