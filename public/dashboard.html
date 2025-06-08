@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasklet Dashboard</title>
+  <title>Tasklet</title>
   <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/chatbot.css">
@@ -33,7 +33,7 @@
     <!-- Secondary toolbar -->
     <div class="toolbar">
       <div class="toolbar-left">
-        <h1 class="dashboard-title"><i class="fa-solid fa-square-plus"></i>
+        <h1 class="plus-toolbar"><i class="fa-solid fa-square-plus"></i>
       </div>
       <div class="toolbar-right">
         <button class="filter-btn"><i class="fas fa-filter"></i></button>
@@ -89,10 +89,60 @@
             <button class="menu-btn"><i class="fas fa-edit"></i></button>
           </div>
         </div>
-
-
-
   </div>
+
+<div id="task-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Create New Task</h2>
+    <form id="new-task-form">
+      <div class="form-group">
+        <label for="task-title">Task Title</label>
+        <input type="text" id="task-title" required placeholder="Enter task title">
+      </div>
+      
+      <div class="form-group">
+        <label for="task-category">Category</label>
+        <select id="task-category">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="school">School</option>
+          <option value="home">Home</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="custom-category" style="display:none;">
+          <input type="text" id="custom-category" placeholder="Enter custom category">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="task-description">Description</label>
+        <textarea id="task-description" rows="3" placeholder="Enter task description"></textarea>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="due-date">Due Date</label>
+          <input type="date" id="due-date">
+        </div>
+        
+        <div class="form-group half">
+          <label>Priority</label>
+          <div class="priority-options">
+            <label><input type="radio" name="priority" value="high"> High</label>
+            <label><input type="radio" name="priority" value="medium" checked> Medium</label>
+            <label><input type="radio" name="priority" value="low"> Low</label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-actions">
+        <button type="button" class="btn cancel-btn">Cancel</button>
+        <button type="submit" class="btn submit-btn">Create Task</button>
+      </div>
+    </form>
+  </div>
+</div>
 
   <!-- Chatbot -->
   <div class="bot-container">
